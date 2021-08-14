@@ -1,5 +1,3 @@
-//I referred to this site, https://velog.io/@daeho-park/C-연결-리스트로-구현한-덱Deque.
-
 #include <iostream>
 #include <string>
 
