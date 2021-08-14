@@ -1,5 +1,3 @@
-//I referred to this site, https://velog.io/@daeho-park/C-연결-리스트로-구현한-덱Deque.
-
 #include <iostream>
 #include <string>
 
@@ -75,15 +73,15 @@ private:
 	int dataSize;
 };
 
+inline void error(const char* message) {
+	puts(message);
+	exit(EXIT_FAILURE);
+}
+
 Deque::Deque() {
 	headNode = nullptr;
 	tailNode = nullptr;
 	dataSize = 0;
-}
-
-inline void error(const char* message) {
-	puts(message);
-	exit(EXIT_FAILURE);
 }
 
 Deque::~Deque() {
