@@ -73,15 +73,15 @@ private:
 	int dataSize;
 };
 
+inline void error(const char* message) {
+	puts(message);
+	exit(EXIT_FAILURE);
+}
+
 Deque::Deque() {
 	headNode = nullptr;
 	tailNode = nullptr;
 	dataSize = 0;
-}
-
-inline void error(const char* message) {
-	puts(message);
-	exit(EXIT_FAILURE);
 }
 
 Deque::~Deque() {
