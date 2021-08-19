@@ -14,7 +14,8 @@ vector<int> mVector;
 
 int lowerBound(vector<int> &v, int value) {
 	int low = 0;
-	int high = v.size() - 1;
+	int high = v.size();
+	//int high = v.size() - 1;
 	while (low < high) {
 		int mid = low + (high - low) / 2;
 		if (value <= v[mid]) {
@@ -29,7 +30,8 @@ int lowerBound(vector<int> &v, int value) {
 
 int upperBound(vector<int> &v, int value) {
 	int low = 0;
-	int high = v.size() - 1;
+	int high = v.size();
+	//int high = v.size() - 1;
 	while (low < high) {
 		int mid = low + (high - low) / 2;
 		if (value >= v[mid]) {
@@ -49,7 +51,7 @@ void input() {
 		cin >> X;
 		nVector.push_back(X);
 	}
-	nVector.push_back(10000001); //Exception Handling
+	//nVector.push_back(10000001); //Exception Handling
 
 	cin >> M;
 	for (int i = 0; i < M; i++) {
