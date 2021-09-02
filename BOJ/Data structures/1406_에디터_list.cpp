@@ -1,4 +1,5 @@
 // I referred to this site, https://kih0902.tistory.com/28.
+// I referred to this site, https://intaehwang.tistory.com/32.
 
 #include <iostream>
 #include <string>
@@ -53,8 +54,8 @@ void Solve() {
 	Input();
 	Solution();
 
-	for (auto it = editor.begin(); it != editor.end(); it++) {
-		cout << *it;
+	for (auto lt = editor.begin(); lt != editor.end(); lt++) {
+		cout << *lt;
 	}
 }
 
