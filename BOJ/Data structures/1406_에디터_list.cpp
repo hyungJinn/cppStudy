@@ -39,7 +39,9 @@ void Solution() {
 		}
 		else if (tmp == 'B') {
 			if (cursor != editor.begin()) {
-				cursor = editor.erase(--cursor);
+				cursor = editor.erase(--cursor); 
+				//--cursor가 가리키는 원소를 삭제
+				//erase()는 삭제한 원소의 다음 원소를 가리키는 iterator를 반환
 			}
 		}
 		else if (tmp == 'P') {
